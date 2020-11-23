@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6e97762-7c5a-41fd-a34c-f81007cbaef5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
@@ -57,6 +56,7 @@
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606125955793</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="learn rust  by building a web app">
+      <created>1606143297865</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606143297865</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -86,10 +93,10 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="732" y="343" width="490" height="396" key="#com.intellij.fileTypes.FileTypeChooser/40.0.1880.1080@40.0.1880.1080" timestamp="1606124605152" />
-    <state x="574" y="89" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606125955638">
+    <state x="574" y="89" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606143297788">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="574" y="89" width="805" height="903" key="CommitChangelistDialog2/40.0.1880.1080@40.0.1880.1080" timestamp="1606125955638" />
+    <state x="574" y="89" width="805" height="903" key="CommitChangelistDialog2/40.0.1880.1080@40.0.1880.1080" timestamp="1606143297788" />
     <state x="834" y="441" key="Github.ShareDialog" timestamp="1606126054166">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
@@ -110,6 +117,10 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state width="1834" height="287" key="GridCell.Tab.0.right/40.0.1880.1080@40.0.1880.1080" timestamp="1606139326192" />
+    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606143300962">
+      <screen x="40" y="0" width="1880" height="1080" />
+    </state>
+    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2/40.0.1880.1080@40.0.1880.1080" timestamp="1606143300962" />
     <state x="784" y="453" width="385" height="176" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606125985185">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>

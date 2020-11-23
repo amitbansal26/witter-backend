@@ -5,11 +5,11 @@ use sqlx::{Pool, PgPool, Error, Postgres};
 async fn main() -> tide::Result<()>{
     dotenv::dotenv().ok();
     pretty_env_logger::init();
-    let db_url= std::env::var("DATABASE_URL").unwrap();
-    let  db_pool = PgPool::connect(&db_url).await?;
+    let db_url = std::env::var("DATABASE_URL").unwrap();
+    let db_pool = PgPool::connect(&db_url).await?;
     let rows = sqlx::query!("select (1) as one").fetch_one(&db_pool).await?;
     dbg!(rows);
-    let mut app = tide::Server::with_state( State{db_pool});
+    let mut app = tide::Server::with_state(State { db_pool: db_pool });
     app.at("/hello").get(greeting_func);
     app.listen("127.0.0.1:8080").await?;
     Ok(())
