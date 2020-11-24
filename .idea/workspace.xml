@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6e97762-7c5a-41fd-a34c-f81007cbaef5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/tests.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +18,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cargo.Expand witter_backend::tests">
     <configuration name="Expand witter_backend" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="expand --bin witter-backend --color=always --theme=GitHub --tests" />
@@ -49,8 +59,21 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Expand witter_backend::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="expand --bin witter-backend --color=always --theme=GitHub --tests tests" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Expand witter_backend::tests" />
         <item itemvalue="Cargo.Expand witter_backend" />
       </list>
     </recent_temporary>
@@ -89,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606174109852</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Constructed json response in tide">
+      <created>1606211472662</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606211472662</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -97,7 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="learn rust  by building a web app" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn rust  by building a web app" />
+    <MESSAGE value="Constructed json response in tide" />
+    <option name="LAST_COMMIT_MESSAGE" value="Constructed json response in tide" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -105,37 +136,49 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="732" y="343" width="490" height="396" key="#com.intellij.fileTypes.FileTypeChooser/40.0.1880.1080@40.0.1880.1080" timestamp="1606124605152" />
-    <state x="574" y="89" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606174109560">
+    <state x="713" y="290" width="528" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606229965455">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="574" y="89" width="805" height="903" key="CommitChangelistDialog2/40.0.1880.1080@40.0.1880.1080" timestamp="1606174109560" />
+    <state x="713" y="290" width="528" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/40.0.1880.1080@40.0.1880.1080" timestamp="1606229965455" />
+    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606211472349">
+      <screen x="40" y="0" width="1880" height="1080" />
+    </state>
+    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2/40.0.1880.1080@40.0.1880.1080" timestamp="1606211472349" />
     <state x="834" y="441" key="Github.ShareDialog" timestamp="1606126054166">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="834" y="441" key="Github.ShareDialog/40.0.1880.1080@40.0.1880.1080" timestamp="1606126054166" />
-    <state width="1834" height="287" key="GridCell.Tab.0.bottom" timestamp="1606139326193">
+    <state width="1834" height="287" key="GridCell.Tab.0.bottom" timestamp="1606235146072">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state width="1834" height="287" key="GridCell.Tab.0.bottom/40.0.1880.1080@40.0.1880.1080" timestamp="1606139326193" />
-    <state width="1834" height="287" key="GridCell.Tab.0.center" timestamp="1606139326192">
+    <state width="1834" height="287" key="GridCell.Tab.0.bottom/40.0.1880.1080@40.0.1880.1080" timestamp="1606235146072" />
+    <state width="1834" height="287" key="GridCell.Tab.0.center" timestamp="1606235146071">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state width="1834" height="287" key="GridCell.Tab.0.center/40.0.1880.1080@40.0.1880.1080" timestamp="1606139326192" />
-    <state width="1834" height="287" key="GridCell.Tab.0.left" timestamp="1606139326191">
+    <state width="1834" height="287" key="GridCell.Tab.0.center/40.0.1880.1080@40.0.1880.1080" timestamp="1606235146071" />
+    <state width="1834" height="287" key="GridCell.Tab.0.left" timestamp="1606235146070">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state width="1834" height="287" key="GridCell.Tab.0.left/40.0.1880.1080@40.0.1880.1080" timestamp="1606139326191" />
-    <state width="1834" height="287" key="GridCell.Tab.0.right" timestamp="1606139326192">
+    <state width="1834" height="287" key="GridCell.Tab.0.left/40.0.1880.1080@40.0.1880.1080" timestamp="1606235146070" />
+    <state width="1834" height="287" key="GridCell.Tab.0.right" timestamp="1606235146071">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state width="1834" height="287" key="GridCell.Tab.0.right/40.0.1880.1080@40.0.1880.1080" timestamp="1606139326192" />
-    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606174112182">
+    <state width="1834" height="287" key="GridCell.Tab.0.right/40.0.1880.1080@40.0.1880.1080" timestamp="1606235146071" />
+    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606211475515">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2/40.0.1880.1080@40.0.1880.1080" timestamp="1606174112182" />
+    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2/40.0.1880.1080@40.0.1880.1080" timestamp="1606211475515" />
+    <state x="138" y="100" width="1684" height="882" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606219658131">
+      <screen x="40" y="0" width="1880" height="1080" />
+    </state>
+    <state x="138" y="100" width="1684" height="882" key="com.intellij.history.integration.ui.views.FileHistoryDialog/40.0.1880.1080@40.0.1880.1080" timestamp="1606219658131" />
     <state x="784" y="453" width="385" height="176" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606125985185">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="784" y="453" width="385" height="176" key="git4idea.remote.GitConfigureRemotesDialog/40.0.1880.1080@40.0.1880.1080" timestamp="1606125985185" />
+    <state x="643" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1606230956333">
+      <screen x="40" y="0" width="1880" height="1080" />
+    </state>
+    <state x="643" y="239" width="672" height="678" key="search.everywhere.popup/40.0.1880.1080@40.0.1880.1080" timestamp="1606230956333" />
   </component>
 </project>
