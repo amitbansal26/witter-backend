@@ -1,6 +1,6 @@
-use tide::Request;
+use tide::{Request, StatusCode, Response, Body};
 use sqlx::{Pool, PgPool, Error, Postgres};
-
+use serde_json::json;
 #[async_std::main]
 async fn main() -> tide::Result<()>{
     dotenv::dotenv().ok();
@@ -12,6 +12,7 @@ async fn main() -> tide::Result<()>{
     let mut app = tide::Server::with_state(State { db_pool: db_pool });
     app.at("/hello").get(greeting_func);
     app.listen("127.0.0.1:8080").await?;
+
     Ok(())
 }
 
@@ -19,8 +20,10 @@ async fn main() -> tide::Result<()>{
 struct State {
     db_pool: Pool<Postgres>,
 }
-async fn  greeting_func(req: Request<State> ) -> tide::Result{
+
+
+async fn  greeting_func(req: Request<State> ) -> tide::Result {
     let pool = &req.state().db_pool;
-    println!("{}", pool.size());
-  Ok("Hello world".into())
+    let json = json!([1,2,3]);
+    Ok(Response::from(json))
 }
