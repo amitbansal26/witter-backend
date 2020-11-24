@@ -1,6 +1,6 @@
-use tide::{Request, Response};
-use sqlx::{Pool, PgPool, Postgres};
 use serde_json::json;
+use sqlx::{PgPool, Pool, Postgres};
+use tide::{Request, Response};
 
 #[async_std::main]
 async fn main() -> tide::Result<()> {
@@ -12,8 +12,6 @@ async fn main() -> tide::Result<()> {
     dbg!(rows);
     let server = create_server(db_pool).await;
     server.listen("127.0.0.1:8080").await?;
-
-
     Ok(())
 }
 

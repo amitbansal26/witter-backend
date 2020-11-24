@@ -1,7 +1,8 @@
-use super::*;
-use sqlx::{PgPool};
 use assert_json_diff::assert_json_eq;
+use sqlx::PgPool;
 use surf;
+
+use super::*;
 
 #[async_std::test]
 async fn test_1() -> tide::Result<()> {

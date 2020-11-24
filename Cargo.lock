@@ -248,12 +248,12 @@ version = "1.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a7e82538bc65a25dbdff70e4c5439d52f068048ab97cdea0acd73f131594caa1"
 dependencies = [
- "async-attributes",
- "async-global-executor",
- "async-io",
- "async-mutex",
- "blocking",
- "crossbeam-utils 0.8.0",
+    "async-attributes",
+    "async-global-executor",
+    "async-io",
+    "async-mutex",
+    "blocking",
+    "crossbeam-utils 0.8.0",
     "futures-channel",
     "futures-core",
     "futures-io",
@@ -1212,9 +1212,9 @@ version = "0.7.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "db65c6da02e61f55dae90a0ae427b2a5f6b3e8db09f58d10efab23af92592616"
 dependencies = [
- "arrayvec",
- "bitflags",
- "cfg-if 0.1.10",
+    "arrayvec",
+    "bitflags",
+    "cfg-if 0.1.10",
     "ryu",
     "static_assertions",
 ]
@@ -1304,7 +1304,7 @@ version = "0.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7b5a279bb9607f9f53c22d496eade00d138d1bdcccd07d74650387cf94942a15"
 dependencies = [
- "block-buffer",
+    "block-buffer",
     "digest",
     "opaque-debug",
 ]
@@ -1340,13 +1340,13 @@ dependencies = [
     "lazy_static",
     "libc",
     "log",
- "openssl",
- "openssl-probe",
- "openssl-sys",
- "schannel",
- "security-framework",
- "security-framework-sys",
- "tempfile",
+    "openssl",
+    "openssl-probe",
+    "openssl-sys",
+    "schannel",
+    "security-framework",
+    "security-framework-sys",
+    "tempfile",
 ]
 
 [[package]]
@@ -1468,11 +1468,11 @@ version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c361aa727dd08437f2f1447be8b59a33b0edd15e0fcee698f935613d9efbca9b"
 dependencies = [
- "cfg-if 0.1.10",
- "cloudabi",
- "instant",
- "libc",
- "redox_syscall",
+    "cfg-if 0.1.10",
+    "cloudabi",
+    "instant",
+    "libc",
+    "redox_syscall",
     "smallvec",
     "winapi",
 ]
@@ -1882,9 +1882,9 @@ version = "0.9.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6e7aab86fe2149bad8c507606bdb3f4ef5e7b2380eb92350f56122cca72a42a8"
 dependencies = [
- "block-buffer",
- "cfg-if 1.0.0",
- "cpuid-bool",
+    "block-buffer",
+    "cfg-if 1.0.0",
+    "cpuid-bool",
     "digest",
     "opaque-debug",
 ]
@@ -1942,8 +1942,8 @@ dependencies = [
     "lazy_static",
     "maplit",
     "nom",
- "regex",
- "unicode_categories",
+    "regex",
+    "unicode_categories",
 ]
 
 [[package]]
@@ -2217,7 +2217,7 @@ version = "0.15.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c832ca099a0645f6446b6c8900b09e3b76978dedc0d7383438698b32ff07f734"
 dependencies = [
- "async-h1",
+    "async-h1",
     "async-session",
     "async-sse",
     "async-std",
