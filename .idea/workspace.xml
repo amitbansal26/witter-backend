@@ -163,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606299617135</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added test cases">
+      <created>1606300054397</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606300054397</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -186,10 +193,10 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="713" y="290" width="528" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/40.0.1880.1080@40.0.1880.1080" timestamp="1606290304947" />
-    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606299617052">
+    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606300054330">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2/40.0.1880.1080@40.0.1880.1080" timestamp="1606299617052" />
+    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2/40.0.1880.1080@40.0.1880.1080" timestamp="1606300054330" />
     <state x="834" y="441" key="Github.ShareDialog" timestamp="1606126054166">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
@@ -214,10 +221,10 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="476" y="176" key="SettingsEditor/40.0.1880.1080@40.0.1880.1080" timestamp="1606293879395" />
-    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606299618770">
+    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606300055588">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2/40.0.1880.1080@40.0.1880.1080" timestamp="1606299618770" />
+    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2/40.0.1880.1080@40.0.1880.1080" timestamp="1606300055588" />
     <state x="138" y="100" width="1684" height="882" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606219658131">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>

@@ -7,6 +7,25 @@ pub struct TestDatabase {
     db_pool: Option<Pool<Postgres>>,
 }
 
+impl TestDatabase {
+    pub async fn new() -> Self {
+        let db_url = db_url();
+        create_db(&db_url).await;
+        run_migrations(&db_url).await;
+
+        let db_pool = PgPool::connect(&db_url).await.unwrap();
+
+        Self {
+            db_url,
+            db_pool: Some(db_pool),
+        }
+    }
+
+    pub fn db(&self) -> PgPool {
+        self.db_pool.clone().unwrap()
+    }
+}
+
 fn db_url() -> String {
     use rand::distributions::Alphanumeric;
     use rand::{thread_rng, Rng};
