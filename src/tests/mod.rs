@@ -21,3 +21,8 @@ async fn test_1() -> tide::Result<()> {
     assert_eq!(vec![1, 2, 3], json);
     Ok(())
 }
+
+#[async_std::test]
+async fn test_2() -> tide::Result<()> {
+    Ok(())
+}
