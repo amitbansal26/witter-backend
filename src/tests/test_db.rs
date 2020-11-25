@@ -11,7 +11,7 @@ impl TestDatabase {
     pub async fn new() -> Self {
         let db_url = db_url();
         create_db(&db_url).await;
-        run_migrations(&db_url).await;
+        //run_migrations(&db_url).await;
 
         let db_pool = PgPool::connect(&db_url).await.unwrap();
 

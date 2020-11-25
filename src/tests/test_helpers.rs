@@ -19,6 +19,18 @@ impl TestServer {
         self.service.respond(req).await
     }
 }
+pub async fn test_setup() -> TestServer {
+    std::env::set_var("APP_ENV", "test");
+    dotenv::dotenv().ok();
+
+    // pretty_env_logger::try_init().ok();
+
+    let test_db = TestDatabase::new().await;
+    let db_pool = test_db.db();
+
+    let server = create_server(db_pool).await;
+    TestServer::new(server, test_db)
+}
 
 // Implement place holder methods for get put delete patch requests
 #[derive(Debug)]
@@ -60,6 +72,7 @@ impl TestRequest {
 
         let mut res = server.simulate(req).await.unwrap();
         let status = res.status();
+        let json: Value = res.body_json().await.unwrap();
         let headers = res
             .iter()
             .flat_map(|(key, values)| {
@@ -68,7 +81,6 @@ impl TestRequest {
                     .map(move |value| (key.as_str().to_string(), value.as_str().to_string()))
             })
             .collect::<HashMap<_, _>>();
-        let json = res.body_json::<Value>().await.unwrap();
 
         (json, status, headers)
     }

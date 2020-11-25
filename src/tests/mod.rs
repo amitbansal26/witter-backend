@@ -6,6 +6,7 @@ use sqlx::PgPool;
 use surf;
 
 use super::*;
+use crate::tests::test_helpers::{get, test_setup, TestServer};
 
 #[async_std::test]
 async fn test_1() -> tide::Result<()> {
@@ -24,5 +25,7 @@ async fn test_1() -> tide::Result<()> {
 
 #[async_std::test]
 async fn test_2() -> tide::Result<()> {
+    let server = test_setup().await;
+    get("/hello").send(&server);
     Ok(())
 }

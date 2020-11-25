@@ -7,6 +7,7 @@
     <list default="true" id="d6e97762-7c5a-41fd-a34c-f81007cbaef5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/test_db.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/test_db.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/test_helpers.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/test_helpers.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Amit Bansal &lt;amitbansal26@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
@@ -185,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606301720337</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="modified test server  file">
+      <created>1606323999320</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606323999320</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -196,7 +209,8 @@
     <MESSAGE value="learn rust  by building a web app" />
     <MESSAGE value="Constructed json response in tide" />
     <MESSAGE value="added test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test cases" />
+    <MESSAGE value="modified test server  file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified test server  file" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -208,10 +222,10 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="713" y="290" width="528" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/40.0.1880.1080@40.0.1880.1080" timestamp="1606290304947" />
-    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606301720253">
+    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606323999258">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2/40.0.1880.1080@40.0.1880.1080" timestamp="1606301720253" />
+    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2/40.0.1880.1080@40.0.1880.1080" timestamp="1606323999258" />
     <state x="834" y="441" key="Github.ShareDialog" timestamp="1606126054166">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
@@ -236,10 +250,10 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="476" y="176" width="1259" height="730" key="SettingsEditor/40.0.1880.1080@40.0.1880.1080" timestamp="1606301644971" />
-    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606301721648">
+    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606324000779">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2/40.0.1880.1080@40.0.1880.1080" timestamp="1606301721648" />
+    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2/40.0.1880.1080@40.0.1880.1080" timestamp="1606324000779" />
     <state x="138" y="100" width="1684" height="882" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606219658131">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
