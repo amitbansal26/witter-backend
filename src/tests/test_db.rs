@@ -35,3 +35,46 @@ async fn create_db(db_url: &str) {
         .await
         .unwrap();
 }
+
+async fn drop_db(db_url: &str) {
+    let (pg_conn, db_name) = parse_db_url(db_url);
+    let mut conn = PgPool::connect(pg_conn).await.unwrap();
+
+    // Disconnect any existing connections to the DB
+    let sql = format!(
+        r#"SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = '{db}'
+AND pid <> pg_backend_pid();"#,
+        db = db_name
+    );
+    sqlx::query::<Postgres>(&sql)
+        .execute(&mut conn.acquire().await.unwrap())
+        .await
+        .unwrap();
+
+    let sql = format!(r#"DROP DATABASE "{db}";"#, db = db_name);
+    sqlx::query::<Postgres>(&sql)
+        .execute(&mut conn.acquire().await.unwrap())
+        .await
+        .unwrap();
+}
+
+async fn run_migrations(db_url: &str) {
+    let (pg_conn, db_name) = parse_db_url(db_url);
+    let mut conn = PgPool::connect(&format!("{}/{}", pg_conn, db_name))
+        .await
+        .unwrap();
+
+    // Run the migrations
+    let sql = async_std::fs::read_to_string("../bin/backend/setup.sql")
+        .await
+        .unwrap();
+
+    for query in sql.split(';') {
+        sqlx::query::<Postgres>(&query)
+            .execute(&mut conn.acquire().await.unwrap())
+            .await
+            .unwrap();
+    }
+}
