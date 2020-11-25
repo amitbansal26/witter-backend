@@ -4,6 +4,7 @@ use serde_json::Value;
 use std::collections::HashMap;
 use tide::http::{Method, Request, Response, Url};
 use tide::{Server, StatusCode};
+#[allow(dead_code)]
 
 pub struct TestServer {
     service: Server<State>,
@@ -34,6 +35,7 @@ pub async fn test_setup() -> TestServer {
 
 // Implement place holder methods for get put delete patch requests
 #[derive(Debug)]
+#[allow(dead_code)]
 pub enum TestRequestType {
     Get,
     Post(Option<Value>),
@@ -55,6 +57,7 @@ pub fn get(url: &str) -> TestRequest {
     }
 }
 
+#[allow(unused_mut)]
 impl TestRequest {
     pub async fn send(self, server: &TestServer) -> (Value, StatusCode, HashMap<String, String>) {
         let url = Url::parse(&format!("http://example.com{}", self.url)).unwrap();

@@ -18,7 +18,7 @@ async fn main() -> tide::Result<()> {
 }
 
 async fn create_server(db_pool: Pool<Postgres>) -> tide::Server<State> {
-    let mut app = tide::Server::with_state(State { db_pool: db_pool });
+    let mut app = tide::Server::with_state(State { db_pool });
     app.at("/hello").get(greeting_func);
     app
 }

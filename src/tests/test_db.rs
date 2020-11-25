@@ -1,7 +1,8 @@
-use rand::Rng;
-use sqlx::{PgConnection, PgPool, Pool, Postgres};
+use sqlx::{PgPool, Pool, Postgres};
 use std::env;
 
+#[allow(dead_code)]
+#[allow(unused)]
 pub struct TestDatabase {
     db_url: String,
     db_pool: Option<Pool<Postgres>>,
@@ -38,7 +39,7 @@ fn db_url() -> String {
 fn parse_db_url(db_url: &str) -> (&str, &str) {
     // Create the DB, splitting the url on the last slash
     // postgres://localhost/legasea_test_aoeuaoeu
-    let separator_pos = db_url.rfind("/").unwrap();
+    let separator_pos = db_url.rfind('/').unwrap();
     let pg_conn = &db_url[..=separator_pos];
     let db_name = &db_url[separator_pos + 1..];
     (pg_conn, db_name)
@@ -47,7 +48,7 @@ fn parse_db_url(db_url: &str) -> (&str, &str) {
 async fn create_db(db_url: &str) {
     let (pg_conn, db_name) = parse_db_url(db_url);
 
-    let mut conn = PgPool::connect(pg_conn).await.unwrap();
+    let conn = PgPool::connect(pg_conn).await.unwrap();
     let sql = format!(r#"CREATE DATABASE "{}""#, &db_name);
     sqlx::query::<Postgres>(&sql)
         .execute(&mut conn.acquire().await.unwrap())
@@ -55,9 +56,10 @@ async fn create_db(db_url: &str) {
         .unwrap();
 }
 
+#[allow(dead_code)]
 async fn drop_db(db_url: &str) {
     let (pg_conn, db_name) = parse_db_url(db_url);
-    let mut conn = PgPool::connect(pg_conn).await.unwrap();
+    let conn = PgPool::connect(pg_conn).await.unwrap();
 
     // Disconnect any existing connections to the DB
     let sql = format!(
@@ -79,9 +81,10 @@ AND pid <> pg_backend_pid();"#,
         .unwrap();
 }
 
+#[allow(dead_code)]
 async fn run_migrations(db_url: &str) {
     let (pg_conn, db_name) = parse_db_url(db_url);
-    let mut conn = PgPool::connect(&format!("{}/{}", pg_conn, db_name))
+    let conn = PgPool::connect(&format!("{}/{}", pg_conn, db_name))
         .await
         .unwrap();
 

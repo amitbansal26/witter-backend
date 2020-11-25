@@ -1,13 +1,10 @@
 mod test_db;
 mod test_helpers;
 
-use assert_json_diff::assert_json_eq;
 use sqlx::PgPool;
-use surf;
 
 use super::*;
-use crate::tests::test_helpers::{get, test_setup, TestServer};
-
+use crate::tests::test_helpers::{get, test_setup};
 #[async_std::test]
 async fn test_1() -> tide::Result<()> {
     dotenv::dotenv().ok();
@@ -24,6 +21,7 @@ async fn test_1() -> tide::Result<()> {
 }
 
 #[async_std::test]
+#[allow(unused_must_use)]
 async fn test_2() -> tide::Result<()> {
     let server = test_setup().await;
     get("/hello").send(&server);
