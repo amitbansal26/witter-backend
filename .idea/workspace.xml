@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6e97762-7c5a-41fd-a34c-f81007cbaef5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/tests/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/test_db.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/test_helpers.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests.rs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +46,31 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1kgODJ3zmKFbVnfZwMNUV9I9AVG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/tests" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/home/amit/rustlearnings/witter/witter-backend/src/tests/tests.rs" value="true" />
+    <property name="settings.editor.selected.configurable" value="language.rust.rustfmt" />
+    <property name="settings.editor.splitter.proportion" value="0.37686938" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tests" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunManager" selected="Cargo.Expand witter_backend::tests">
     <configuration name="Expand witter_backend" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
@@ -82,6 +105,9 @@
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
+    <option name="externalLinter" value="Clippy" />
+    <option name="runExternalLinterOnTheFly" value="true" />
+    <option name="runRustfmtOnSave" value="true" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
     <option name="version" value="2" />
   </component>
@@ -136,6 +162,7 @@
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="learn rust  by building a web app" />
     <MESSAGE value="Constructed json response in tide" />
     <MESSAGE value="added test cases" />
@@ -147,10 +174,10 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="732" y="343" width="490" height="396" key="#com.intellij.fileTypes.FileTypeChooser/40.0.1880.1080@40.0.1880.1080" timestamp="1606124605152" />
-    <state x="713" y="290" width="528" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606229965455">
+    <state x="713" y="290" width="528" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606290304947">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="713" y="290" width="528" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/40.0.1880.1080@40.0.1880.1080" timestamp="1606229965455" />
+    <state x="713" y="290" width="528" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/40.0.1880.1080@40.0.1880.1080" timestamp="1606290304947" />
     <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606236426734">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
@@ -159,22 +186,26 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="834" y="441" key="Github.ShareDialog/40.0.1880.1080@40.0.1880.1080" timestamp="1606126054166" />
-    <state width="1834" height="287" key="GridCell.Tab.0.bottom" timestamp="1606235146072">
+    <state width="1834" height="287" key="GridCell.Tab.0.bottom" timestamp="1606293148165">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state width="1834" height="287" key="GridCell.Tab.0.bottom/40.0.1880.1080@40.0.1880.1080" timestamp="1606235146072" />
-    <state width="1834" height="287" key="GridCell.Tab.0.center" timestamp="1606235146071">
+    <state width="1834" height="287" key="GridCell.Tab.0.bottom/40.0.1880.1080@40.0.1880.1080" timestamp="1606293148165" />
+    <state width="1834" height="287" key="GridCell.Tab.0.center" timestamp="1606293148165">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state width="1834" height="287" key="GridCell.Tab.0.center/40.0.1880.1080@40.0.1880.1080" timestamp="1606235146071" />
-    <state width="1834" height="287" key="GridCell.Tab.0.left" timestamp="1606235146070">
+    <state width="1834" height="287" key="GridCell.Tab.0.center/40.0.1880.1080@40.0.1880.1080" timestamp="1606293148165" />
+    <state width="1834" height="287" key="GridCell.Tab.0.left" timestamp="1606293148164">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state width="1834" height="287" key="GridCell.Tab.0.left/40.0.1880.1080@40.0.1880.1080" timestamp="1606235146070" />
-    <state width="1834" height="287" key="GridCell.Tab.0.right" timestamp="1606235146071">
+    <state width="1834" height="287" key="GridCell.Tab.0.left/40.0.1880.1080@40.0.1880.1080" timestamp="1606293148164" />
+    <state width="1834" height="287" key="GridCell.Tab.0.right" timestamp="1606293148165">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state width="1834" height="287" key="GridCell.Tab.0.right/40.0.1880.1080@40.0.1880.1080" timestamp="1606235146071" />
+    <state width="1834" height="287" key="GridCell.Tab.0.right/40.0.1880.1080@40.0.1880.1080" timestamp="1606293148165" />
+    <state x="476" y="176" key="SettingsEditor" timestamp="1606293879395">
+      <screen x="40" y="0" width="1880" height="1080" />
+    </state>
+    <state x="476" y="176" key="SettingsEditor/40.0.1880.1080@40.0.1880.1080" timestamp="1606293879395" />
     <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606236433633">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
