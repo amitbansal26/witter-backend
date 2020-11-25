@@ -1,5 +1,5 @@
 use rand::Rng;
-use sqlx::{PgConnection, Pool, Postgres};
+use sqlx::{PgConnection, PgPool, Pool, Postgres};
 use std::env;
 
 pub struct TestDatabase {
@@ -28,13 +28,10 @@ fn parse_db_url(db_url: &str) -> (&str, &str) {
 async fn create_db(db_url: &str) {
     let (pg_conn, db_name) = parse_db_url(db_url);
 
-    let mut conn = sqlx::postgres::PgConnection::connect(pg_conn)
-        .await
-        .unwrap();
-
+    let mut conn = PgPool::connect(pg_conn).await.unwrap();
     let sql = format!(r#"CREATE DATABASE "{}""#, &db_name);
     sqlx::query::<Postgres>(&sql)
-        .execute(&mut conn)
+        .execute(&mut conn.acquire().await.unwrap())
         .await
         .unwrap();
 }
