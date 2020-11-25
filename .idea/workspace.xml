@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6e97762-7c5a-41fd-a34c-f81007cbaef5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/test_db.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/test_db.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/tests" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="org.rust.disableDetachedFileInspection/home/amit/rustlearnings/witter/witter-backend/src/tests/tests.rs" value="true" />
-    <property name="settings.editor.selected.configurable" value="language.rust.rustfmt" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.37686938" />
   </component>
   <component name="RecentsManager">
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606300054397</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added test cases">
+      <created>1606300381358</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606300381358</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -193,10 +200,10 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state x="713" y="290" width="528" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/40.0.1880.1080@40.0.1880.1080" timestamp="1606290304947" />
-    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606300054330">
+    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2" timestamp="1606300381300">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2/40.0.1880.1080@40.0.1880.1080" timestamp="1606300054330" />
+    <state x="633" y="61" width="805" height="903" key="CommitChangelistDialog2/40.0.1880.1080@40.0.1880.1080" timestamp="1606300381300" />
     <state x="834" y="441" key="Github.ShareDialog" timestamp="1606126054166">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
@@ -217,14 +224,14 @@
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
     <state width="1834" height="287" key="GridCell.Tab.0.right/40.0.1880.1080@40.0.1880.1080" timestamp="1606293148165" />
-    <state x="476" y="176" key="SettingsEditor" timestamp="1606293879395">
+    <state x="476" y="176" width="1259" height="730" key="SettingsEditor" timestamp="1606301644971">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="476" y="176" key="SettingsEditor/40.0.1880.1080@40.0.1880.1080" timestamp="1606293879395" />
-    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606300055588">
+    <state x="476" y="176" width="1259" height="730" key="SettingsEditor/40.0.1880.1080@40.0.1880.1080" timestamp="1606301644971" />
+    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2" timestamp="1606300382398">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
-    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2/40.0.1880.1080@40.0.1880.1080" timestamp="1606300055588" />
+    <state x="575" y="277" width="804" height="528" key="Vcs.Push.Dialog.v2/40.0.1880.1080@40.0.1880.1080" timestamp="1606300382398" />
     <state x="138" y="100" width="1684" height="882" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606219658131">
       <screen x="40" y="0" width="1880" height="1080" />
     </state>
