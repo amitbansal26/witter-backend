@@ -5,6 +5,8 @@ use sqlx::PgPool;
 
 use super::*;
 use crate::tests::test_helpers::{get, test_setup};
+use serde_json::Value;
+
 #[async_std::test]
 async fn test_1() -> tide::Result<()> {
     dotenv::dotenv().ok();
@@ -24,6 +26,9 @@ async fn test_1() -> tide::Result<()> {
 #[allow(unused_must_use)]
 async fn test_2() -> tide::Result<()> {
     let server = test_setup().await;
-    get("/hello").send(&server);
+    let res = get("/hello").send(&server).await;
+    let json: Value = res.0;
+    assert_json_diff::assert_json_eq!(&json, &json!([1, 2, 3]));
+    //println!("{:?}", res.0.to_string());
     Ok(())
 }
